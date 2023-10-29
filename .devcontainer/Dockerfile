@@ -1,1 +1,3 @@
-FROM node:20-bullseye
+FROM alpine
+RUN apk add nodejs-current npm zsh git
+RUN npm i -g ts-node
